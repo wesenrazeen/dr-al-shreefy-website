@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dr. Abd Al-Gafar Al-Shreefy | Consultant Surgeon</title>
+
+    <style>
+
+        /* Modern Reset and Variables */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        :root {
+
+            --primary-color: #0a74da;
+
+            --secondary-color: #1a365d;
+
+            --text-color: #333333;
+
+            --light-bg: #f4f7f6;
+
+        }
+
+
+        /* Navigation */
+
+        header {
+
+            background-color: #ffffff;
+
+            padding: 20px 10%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 100;
+
+        }
+
+        .logo {
+
+            font-size: 22px;
+
+            font-weight: bold;
+
+            color: var(--secondary-color);
+
+        }
+
+        nav a {
+
+            text-decoration: none;
+
+            color: var(--text-color);
+
+            margin-left: 20px;
+
+            font-weight: 500;
+
+            transition: color 0.3s;
+
+        }
+
+        nav a:hover {
+
+            color: var(--primary-color);
+
+        }
+
+
+        /* Hero Section */
+
+        .hero {
+
+            background: linear-gradient(135deg, #1a365d 0%, #0a74da 100%);
+
+            color: white;
+
+            padding: 100px 10%;
+
+            text-align: center;
+
+        }
+
+        .hero h1 {
+
+            font-size: 3rem;
+
+            margin-bottom: 10px;
+
+        }
+
+        .hero h2 {
+
+            font-size: 1.8rem;
+
+            font-weight: 400;
+
+            margin-bottom: 20px;
+
+            opacity: 0.9;
+
+        }
+
+        .badges {
+
+            margin-bottom: 30px;
+
+        }
+
+        .badge {
+
+            background: rgba(255, 255, 255, 0.2);
+
+            padding: 8px 15px;
+
+            border-radius: 20px;
+
+            margin: 5px;
+
+            display: inline-block;
+
+            font-size: 0.9rem;
+
+        }
+
+        .btn {
+
+            background-color: #ffffff;
+
+            color: var(--primary-color);
+
+            padding: 12px 30px;
+
+            text-decoration: none;
+
+            border-radius: 25px;
+
+            font-weight: bold;
+
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+            transition: transform 0.3s;
+
+        }
+
+        .btn:hover {
+
+            transform: translateY(-2px);
+
+        }
+
+
+        /* About & Info Sections */
+
+        .container {
+
+            padding: 60px 10%;
+
+        }
+
+        .grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 40px;
+
+        }
+
+        .card {
+
+            background: var(--light-bg);
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            border-left: 5px solid var(--primary-color);
+
+        }
+
+        .card.arabic {
+
+            direction: rtl;
+
+            text-align: right;
+
+            border-left: none;
+
+            border-right: 5px solid var(--primary-color);
+
+        }
+
+        h3 {
+
+            color: var(--secondary-color);
+
+            margin-bottom: 15px;
+
+            font-size: 1.4rem;
+
+        }
+
+        p {
+
+            color: #555;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* Contact Section */
+
+        .contact {
+
+            background-color: #ffffff;
+
+            text-align: center;
+
+        }
+
+        
+
+        /* Footer */
+
+        footer {
+
+            background-color: var(--secondary-color);
+
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+
+            margin-top: 40px;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        /* Responsive Design */
+
+        @media (max-width: 768px) {
+
+            .grid { grid-template-columns: 1fr; }
+
+            header { flex-direction: column; gap: 15px; }
+
+            nav a { margin: 0 10px; }
+
+            .hero h1 { font-size: 2.2rem; }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="logo">Dr. Al-Shreefy</div>
+
+        <nav>
+
+            <a href="#about">About</a>
+
+            <a href="#clinic">Clinic Location</a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+
+        <h1>Dr. Abd Al-Gafar Al-Shreefy</h1>
+
+        <h2>Consultant Surgeon / جراح استشاري</h2>
+
+        <div class="badges">
+
+            <span class="badge">F.R.C.S (London)</span>
+
+            <span class="badge">G.M.C Registered</span>
+
+        </div>
+
+        <a href="tel:+964000000000" class="btn">Call Clinic / اتصل 
+بالعيادة</a>
+
+    </section>
+
+
+    <section id="about" class="container">
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h3>Professional Profile</h3>
+
+                <p>Dr. Abd Al-Gafar Al-Shreefy is a highly distinguished 
+Consultant Surgeon based in Baghdad, Iraq. He holds the prestigious 
+Fellowship of the Royal College of Surgeons (F.R.C.S) and is a permanent 
+member of the British General Medical Council (G.M.C), bringing 
+world-class surgical expertise to his patients.</p>
+
+            </div>
+
+
+            <div class="card arabic">
+
+                <h3>السيرة المهنية</h3>
+
+                <p>الدكتور عبد الغفار الشريفي، جراح استشاري قدير يمارس 
+عمله في العاصمة بغداد. زميل كلية الجراحين الملكية البريطانية (F.R.C.S) 
+وعضو دائم في الجمعية الطبية البريطانية (G.M.C)، يقدم أعلى مستويات الرعاية 
+الطبية والجراحية المبنية على الخبرة العالمية.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="clinic" class="container contact" 
+style="background-color: var(--light-bg);">
+
+        <h3 style="font-size: 1.8rem; margin-bottom: 10px;">Clinic 
+Location / موقع العيادة</h3>
+
+        <p style="font-weight: bold; margin-bottom: 20px;">Baghdad, Iraq — 
+بغداد، العراق</p>
+
+        
+
+        <div class="card arabic" style="max-width: 600px; margin: 0 auto; 
+background: white;">
+
+            <h3>العنوان بالتفصيل:</h3>
+
+            <p>بغداد الجديدة ، مقابل المجمع الذهبي ، عمارة الباوي</p>
+
+            <p style="margin-top: 10px; color: var(--primary-color); 
+font-weight: bold;">أوقات الدوام: يرجى الاتصال للحجز المسبق</p>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>&copy; 2026 Dr. Abd Al-Gafar Al-Shreefy. All Rights 
+Reserved.</p>
+
+    </footer>
+
+
+</body>
+
+</html>
